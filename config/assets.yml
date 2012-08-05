@@ -1,0 +1,21 @@
+embed_assets:               datauri 
+javascript_compressor:      uglifier
+package_path:               assets
+
+#extension
+dynamic_package_path:       on
+
+javascripts:
+  essential:
+    - public/javascripts/jquery.js
+  apponly: 
+    - public/javascripts/bootstrap.min.js
+    - public/javascripts/application.js
+
+stylesheets:
+  common:
+    - public/stylesheets/bootstrap.min.css
+  app:
+    - public/stylesheets/space.css
+    - public/stylesheets/application.css
+    - public/stylesheets/bootstrap-responsive.css

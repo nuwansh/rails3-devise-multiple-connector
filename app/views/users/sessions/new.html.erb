@@ -1,0 +1,32 @@
+<h2>Sign in</h2>
+<hr />
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div>
+      <label for="user_remember_me" class="checkbox">
+        <%= f.check_box :remember_me %> Remember me
+      </label>
+    </div>
+  <% end -%>
+
+  <div>
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button> 
+    <span class="btn-wrapper"> <span>or</span>
+        <%- if devise_mapping.recoverable? && controller_name != 'passwords' %>
+          <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+        <% end -%>
+    </span>
+  </div>
+<% end %>

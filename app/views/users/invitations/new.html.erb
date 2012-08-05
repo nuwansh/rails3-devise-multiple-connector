@@ -1,0 +1,13 @@
+<h2>Send invitation</h2>
+
+<hr />
+<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => {:method => :post} do |f| %>
+  <%= devise_error_messages! %>
+
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Send an invitation</button>
+<% end %>

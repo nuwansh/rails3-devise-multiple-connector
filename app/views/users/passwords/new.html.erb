@@ -1,0 +1,21 @@
+<h2>Forgot your password?</h2>
+<hr />
+
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div>
+    <br />
+    <button type="submit" class="btn btn-primary">Send me reset password instructions</button> 
+    <span class="btn-wrapper"> <span>or</span>
+      <%- if controller_name != 'sessions' %>
+        <%= link_to "Login", new_session_path(resource_name) %><br />
+      <% end -%>
+    </span>
+  </div>
+<% end %>

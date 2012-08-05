@@ -1,0 +1,8 @@
+/* App custom css */
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+/* error message form */
+.field_with_errors { display: inline; }

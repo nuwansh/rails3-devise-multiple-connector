@@ -1,0 +1,26 @@
+<div class="heading">
+  <h2>Members</h2>
+</div>
+
+<table class="table table-striped" id="list">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <% next unless user.invitation_token.nil? %>
+        <tr>
+          <td><%= user.first_name %></td>
+          <td><%= user.email %></td>
+          <td><%= user_role_name user.role_ids[0] %></td>
+          <td><%= link_to "Edit", edit_user_path(user) %> </td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+// Striped Tables - Zebra-striping table, add the <strong>.table-striped</strong> class.
+// Experimental: An alternative signup button styling used in AB Test #195.
+//
+// div.data > table.tb-striped > tr > td - Table striped element structure 
+// .tb-striped - Striped table skin class is <strong>.tb-striped</strong>
+// View - <a href="/view_table" rel="more">View table output</a>
+//
+// Styleguide 1.0
+
+
+.tb-striped tbody tr:nth-child(odd) td, .tb-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}

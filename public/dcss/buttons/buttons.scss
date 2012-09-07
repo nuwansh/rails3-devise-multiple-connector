@@ -1,0 +1,209 @@
+.btn {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1;
+  color: #777777;
+  text-align: center;
+  //text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FDFDFC), color-stop(25%, #ffffff), to(#F0EFEA));
+  background-image: -webkit-linear-gradient(#FDFDFC, #ffffff 25%, #F0EFEA);
+  background-image: -moz-linear-gradient(top, #FDFDFC, #FFF 25%, #F0EFEA);
+  background-image: -ms-linear-gradient(#FDFDFC, #ffffff 25%, #F0EFEA);
+  background-image: -o-linear-gradient(#FDFDFC, #ffffff 25%, #F0EFEA);
+  background-image: linear-gradient(#FDFDFC, #ffffff 25%, #F0EFEA);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FDFDFC', endColorstr='#F0EFEA', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+}
+
+.btn:hover {
+  text-decoration: none;
+  -webkit-box-shadow:  0px 0px 5px rgba(100,100,100,0.2);
+  -moz-box-shadow: 0px 0px 5px rgba(100,100,100,0.2);
+  -ms-box-shadow: 0px 0px 5px rgba(100,100,100,0.2);
+  -o-box-shadow: 0px 0px 5px rgba(100,100,100,0.2);
+  box-shadow: 0px 0px 5px rgba(100,100,100,0.2);
+  //background-position: 0 -15px;
+  -webkit-transition: all .15s ease-in;
+  -o-transition: all .15s ease-in;
+  -moz-transition: all .15s ease-in;
+  transition: all .15s ease-in;	
+}
+
+.btn.active, .btn:active {
+  text-decoration: none;
+  -webkit-box-shadow:  0px 2px 2px rgba(000,000,000,0.1);
+  -moz-box-shadow: 0px 2px 2px rgba(000,000,000,0.1);
+  -ms-box-shadow: 0px 2px 2px rgba(000,000,000,0.1);
+  -o-box-shadow: 0px 2px 2px rgba(000,000,000,0.1);
+  box-shadow: 0px 2px 2px rgba(000,000,000,0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DEDEDD), to(#FDFDFC));
+  background-image: -webkit-linear-gradient(top, #DEDEDD, #FDFDFC);
+  background-image: -moz-linear-gradient(top, #DEDEDD, #FDFDFC);
+  background-image: -ms-linear-gradient(top, #DEDEDD, #FDFDFC);
+  background-image: -o-linear-gradient(top, #DEDEDD, #FDFDFC);
+  background-image: linear-gradient(top, #DEDEDD, #FDFDFC);
+  outline: 0;
+} 
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-success {
+  color: #FFFFFF;
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  //border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 1px 0 rgba(98, 196, 98, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(98, 196, 98, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(98, 196, 98, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn-success:active {
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#44A00E), to(#7ACD2E));
+		background-image: -webkit-linear-gradient(top, #44A00E, #7ACD2E);
+		background-image: -moz-linear-gradient(top, #44A00E, #7ACD2E);
+		background-image: -ms-linear-gradient(top, #44A00E, #7ACD2E);
+		background-image: -o-linear-gradient(top, #44A00E, #7ACD2E);
+		background-image: linear-gradient(top, #44A00E, #7ACD2E);
+}
+
+.btn-large {
+  padding: 10px 13px;
+  font-size: 15px;
+  line-height: 1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+.btn.disabled, .btn[disabled] {
+              cursor: default;
+    background-image: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D8D8D8), to(#CCCCCC));
+    background-image: -webkit-linear-gradient(top, #D8D8D8, #CCCCCC);
+    background-image: -moz-linear-gradient(top, #D8D8D8, #CCCCCC);
+    background-image: -ms-linear-gradient(top, #D8D8D8, #CCCCCC);
+    background-image: -o-linear-gradient(top, #D8D8D8, #CCCCCC);
+    background-image: linear-gradient(top, #D8D8D8, #CCCCCC);
+             opacity: 0.65;
+              filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+button.btn::-moz-focus-inner, input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+/* 
+:description: 
+This is Buttons styles sheet 
+
+:modifiers:
+.btn    - Standard button with gradient
+.btn-success - Green button (Indicates a successful or positive action)
+
+:html:
+<div class="line">
+  <div class="unit2">
+    <div class="mod simple">
+      <div class="inner">
+        <div class="hd"><h4><strong>Icon buttons</strong></h4></div>
+        <div class="bd">
+          <p><strong>Small Buttons</strong></p>
+          <p><a class="btn" href="#"><i class="icon-ok-sign"></i>  Default</a> <code>.btn</code>&nbsp;<code>.icon-plus</code> </p>
+          <p><a class="btn btn-success" href="#"><i class="icon-ok-sign"></i>  Default</a> <code>.btn</code>&nbsp;<code>.icon-plus</code> </p>
+          <p><strong>Larger Buttons</strong></p>
+          <p><a class="btn btn-large" href="#"><i class="icon-minus-sign"></i>  Default</a> <code>.btn</code>&nbsp;<code>.icon-minus-sign</code> </p>
+          <p><a class="btn btn-success btn-large" href="#"><i class="icon-ok-sign"></i>  Default</a> <code>btn btn-large</code>&nbsp;<code>.icon-plus</code> </p>
+        </div>
+        <div class="ft"><p>&nbsp;</p></div>
+      </div> <!-- inner -->
+    </div> <!-- mod -->
+  </div><!-- unit -->
+</div>
+<div class="line">
+      <div class="unit2">
+        <div class="mod simple">
+          <div class="inner">
+            <div class="hd"></div>
+            <div class="bd">
+              <h4><strong>Buttons for anchors</strong></h4>
+              <p>Default button</p>
+              <p><a class="btn" href="#">Default</a> <code>.btn</code> </p>
+              <p>Successful or positive action</p>
+              <p><a class="btn btn-success" href="#">Default</a> <code>.btn-success</code></p>
+              <h4>Multiple sizes buttons</h4>
+              <p><a class="btn btn-large" href="#">Default Larger</a> <code>.btn btn-large</code></p>
+              <p><a class="btn btn-success btn-large" href="#">Default Larger</a> <code>.btn btn-large</code></p>
+              <h4>Disabled state</h4>
+              <p><a class="btn disabled" href="#">Default disabled</a> <code>.btn .disabled</code></p>
+              <p><a class="btn btn-large disabled" href="#">Default Larger</a> <code>.btn btn-large disabled</code></p>
+            </div>
+            <div class="ft">&nbsp;</div>
+          </div> <!-- inner -->
+        </div> <!-- mod -->
+      </div><!-- unit -->
+      <div class="unit2 lastUnit">
+        <div class="mod simple">
+          <div class="inner">
+            <div class="hd"><h4><strong>Buttons for forms</strong></h4></div>
+            <div class="bd">
+              <p><button class="btn btn-large">Action</button> <code>btn btn-large</code></p>
+              <p><button class="btn btn-success btn-large">Action</button> <code>btn btn-success btn-large</code></p>
+              <h4><strong>Icon buttons</strong></h4>
+              <p><button class="btn btn-large"><i class="icon-minus-sign"></i> Action</button> <code>btn btn-large</code></p>
+              <p><button class="btn btn-large"><i class="icon-arrow-right"></i> Action</button> <code>btn btn-large</code></p>
+              <h4><strong>Only icon</strong></h4>
+              <p><button class="btn"><i class="icon-minus-sign"></i></button> <code>btn</code></p>
+            </div>
+            <div class="ft">&nbsp;</div>
+          </div> <!-- inner -->
+        </div> <!-- mod -->
+      </div><!-- unit -->
+    </div>
+
+:sample:
+<!-- Links -->
+<a href="#" class="btn">Default</a>
+<a class="btn btn-success btn-large" href="#"><i class="icon-ok-sign"></i> Default</a>
+<!-- buttons -->
+<button class="btn"><i class="icon-minus-sign"></i></button>
+
+:experimental:
+An alternative signup button styling used in AB Test #195.
+
+:deprecated:
+Styling for legacy wikis. We'll drop support for these wikis on July 13, 2007.
+
+:compatible: 
+in IE6+, Firefox 2+, Safari 4+.
+
+:styleguide: 1.0
+*/

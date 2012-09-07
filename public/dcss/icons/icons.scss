@@ -1,0 +1,65 @@
+/* 
+:description: 
+Icons example css
+ 
+:modifiers:
+.icon-plus    - Plus Icon 
+.icon-ok-sign - Ok sign Icon 
+
+:sample:
+<i class="icon-plus"></i>
+<i class="icon-ok-sign"></i>
+<i class="icon-minus-sign"></i>
+<i class="icon-arrow-right"></i>
+
+
+{{html}}
+  <div class="unit2 lastUnit">
+    <div class="mod simple">
+      <div class="inner">
+        <div class="hd"><h4><strong>Icons</strong></h4></div>
+        <div class="bd">
+          <p><i class="icon-plus"></i> icon-plus</p>
+          <p><i class="icon-ok-sign"></i> icon-ok-sign</p>
+          <p><i class="icon-minus-sign"></i> icon-minus-sign</p>
+          <p><i class="icon-arrow-right"></i> icon-arrow-right</p>
+        </div>
+        <div class="ft"><p>&nbsp;</p></div>
+      </div> <!-- inner -->
+    </div> <!-- mod -->
+  </div><!-- unit -->
+ {{/html}}
+
+:styleguide: 1.0
+*/
+
+[class^="icon-"] {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: text-top;
+  background-image: url(../img/icons.png);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  *margin-right: .3em;
+}
+
+.btn-large [class^="icon-"] {
+  margin-top: 1px;
+}
+
+.icon-plus {
+  background-position: 0 0;
+}
+
+.icon-ok-sign {
+  background-position: 0 -64px;
+}
+
+.icon-minus-sign {
+  background-position: 0 -128px;
+}
+
+.icon-arrow-right {
+  background-position: 0 -190px;
+}

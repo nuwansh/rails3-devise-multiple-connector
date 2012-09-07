@@ -10,7 +10,7 @@ Devise.setup do |config|
   # config.mailer = "Devise::Mailer"
 
   # Automatically apply schema changes in tableless databases
-  config.apply_schema = false
+  # config.apply_schema = false
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -113,7 +113,7 @@ Devise.setup do |config|
 
   # If true, uses the password salt as remember token. This should be turned
   # to false if you are not using database authenticatable.
-  config.use_salt_as_remember_token = true
+  # config.use_salt_as_remember_token = true
 
   # Options to be passed to the created cookie. For instance, you can set
   # :secure => true in order to force SSL only cookies.
@@ -220,4 +220,14 @@ Devise.setup do |config|
   #   manager.intercept_401 = false
   #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end
+
+
+  config.omniauth :facebook, "app_key", "secret_key", :strategy_class => OmniAuth::Strategies::Facebook
+
+  # Twitter connector
+  config.omniauth :twitter,  "app_key", "secret_key"  #, :strategy_class => OmniAuth::Strategies::Twitter
+
+  config.omniauth :google_oauth2,  "app_key", "secret_key", {:scope => "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", :access_type => 'online', :approval_prompt => "auto" }
+
+  config.omniauth  :linkedin,  "app_key", "secret_key", :scope => "r_emailaddress r_fullprofile", :fields => ["id", "email-address", "first-name", "last-name", "headline", "picture-url", "public-profile-url"] 
 end

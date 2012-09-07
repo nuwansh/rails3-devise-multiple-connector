@@ -1,0 +1,19 @@
+// Templates are used to solve common design patterns for page layout <br /> <br />
+// 
+// .page - Main wraps site content
+// .head - Header block of the page, and width is set to <strong>100%</strong>
+// .rightCol - Right block (sidebar) of the page, sidebar width is <strong>25%</strong> out of the <strong>.body</strong>
+// .main - It means main content block of the site which is width set to <strong>75%</strong> out of the <strong>.body</strong>
+// .foot - Footer block of the site, width is <strong>100%</strong> 
+//
+// Styleguide 1.0
+
+//tempalte variables
+$page-width: 950px;
+
+.page { margin: 0 auto; width: $page-width; }
+.head { padding: 10px 0; width: 100%; }
+.body { overflow: hidden; }
+.rightCol { float: right; width: 25% }
+.main { float: left; width: 75%; }
+.foot {  }

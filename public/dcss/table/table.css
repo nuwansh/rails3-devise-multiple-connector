@@ -1,0 +1,19 @@
+.data {
+  border-right: 1px solid transparent;
+  padding: 10px;
+  position: relative;
+  vertical-align: top; }
+
+table {
+  width: 100%; }
+
+th, td {
+  vertical-align: top; }
+
+.data th, .data td {
+  padding: 8px;
+  border-bottom: 1px solid #AE0345; }
+
+.data th {
+  color: #000000;
+  font-weight: bold; }

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120313044638) do
+ActiveRecord::Schema.define(:version => 20120906072411) do
 
   create_table "assignments", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -52,12 +53,24 @@ ActiveRecord::Schema.define(:version => 20120313044638) do
     t.integer  "invitation_limit"
     t.integer  "invited_by_id"
     t.string   "invited_by_type"
+    t.string   "facebook_id"
+    t.string   "facebook_link"
+    t.string   "twitter_id"
+    t.string   "twitter_link"
+    t.string   "google_id"
+    t.string   "google_link"
+    t.string   "linkedin_id"
+    t.string   "linkedin_link"
   end
 
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["facebook_id"], :name => "index_users_on_facebook_id"
+  add_index "users", ["google_id"], :name => "index_users_on_google_id"
   add_index "users", ["invitation_token"], :name => "index_users_on_invitation_token"
   add_index "users", ["invited_by_id"], :name => "index_users_on_invited_by_id"
+  add_index "users", ["linkedin_id"], :name => "index_users_on_linkedin_id"
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+  add_index "users", ["twitter_id"], :name => "index_users_on_twitter_id"
 
 end

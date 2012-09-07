@@ -51,7 +51,7 @@ SimpleNavigation::Configuration.run do |navigation|
     #
     # primary.item :dashboard, 'Dashboard', root_path 
 
-    primary.item :trials, "Home", "/"
+    primary.item :trials, "Home", root_path
     
     primary.item :users, "Users", users_path, :highlights_on => :subpath do |sub|
       sub.dom_class = 'nav nav-pills'

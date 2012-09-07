@@ -1,0 +1,41 @@
+<h2>Create your account</h2>
+
+<div class="span9">
+<p>
+<% if @user.provider == "facebook" %>
+  <i><%= image_tag "/img/#{@user.provider}.png" %></i>
+<% end %>
+  Connected as <%= @user.first_name %> 
+</p>
+
+<hr />
+
+<%= form_for @user, :url => registration_path(@user) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div>
+    <%= f.label :username %>
+    <%= f.text_field :username, :class => "span6" %>
+  </div>
+
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email, :class => "span6" %>
+  </div>
+
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div>
+    <br />
+    <button type="submit" class="btn btn-primary">Sign up</button> 
+  </div>
+<% end %>
+</div>

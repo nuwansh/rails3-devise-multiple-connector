@@ -1,0 +1,35 @@
+/* 
+:description:
+Button groups 
+
+:html:
+<div class="line">
+  <div class="unit2">
+    <div class="mod  simple">
+      <div class="inner">
+        <div class="hd"><h4><strong>Button groups</strong></h4></div>
+        <div class="bd">
+         <br>
+         <div class="mlm btn-group">
+          <a class="btn" href="#">Left</a>
+          <a class="btn" href="#">Middle</a>
+          <a class="btn" href="#">Right</a>
+        </div> 
+        </div>
+        <div class="ft">&nbsp;</div>
+      </div>
+    </div><!--mod-->
+  </div><!--unit2-->
+</div>
+
+:styleguide: 1.0
+*/
+
+.btn-group .btn {
+  position: relative;
+  float: left;
+  margin-left: -1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}

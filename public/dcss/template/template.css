@@ -1,0 +1,18 @@
+.page {
+  margin: 0 auto;
+  width: 950px; }
+
+.head {
+  padding: 10px 0;
+  width: 100%; }
+
+.body {
+  overflow: hidden; }
+
+.rightCol {
+  float: right;
+  width: 25%; }
+
+.main {
+  float: left;
+  width: 75%; }

@@ -37,6 +37,38 @@
   </div>
 <% end %>
 
+<h3>Social Connectors</h3>
+<ul class="unstyled">
+  <li>
+    <% if resource.facebook_id.blank? %>
+      <p><img src="/img/facebook-inactive.png" title="facebook"  /> <%= link_to "Activate login with Facebook", user_omniauth_authorize_path(:facebook, {:state => "link_to_facebook"}), :class => "link" %> </p>
+    <% else %>
+      <p><img src="/img/facebook.png" title="facebook" /> <%= link_to "Deactivate login with Facebook", deactivate_registration_path({:network => "facebook"}), :class => "link" %>
+    <% end %>
+  <li>
+  <li>
+    <% if resource.twitter_id.blank? %>
+      <p><img src="/img/twitter-inactive.png" title="Twitter"  /> <%= link_to "Activate login with Twitter", user_omniauth_authorize_path(:twitter, {:state => "link_to_twitter"}), :class => "link" %> </p>
+    <% else %>
+      <p><img src="/img/twitter.png" title="Twitter" /> <%= link_to "Deactivate login with Twitter", deactivate_registration_path({:network => "twitter"}), :class => "link" %>
+    <% end %>
+  </li>
+  <li>
+    <% if resource.google_id.blank? %>
+      <p><img src="/img/google-inactive.png" title="Google"  /> <%= link_to "Activate login with Google", user_omniauth_authorize_path(:google_oauth2, {:state => "link_to_google"}), :class => "link" %> </p>
+    <% else %>
+      <p><img src="/img/google.png" title="Google" /> <%= link_to "Deactivate login with Google", deactivate_registration_path({:network => "google"}), :class => "link" %>
+    <% end %>
+  </li>
+  <li>
+    <% if resource.linkedin_id.blank? %>
+      <p><img src="/img/linkedin-inactive.png" title="Linkedin"  /> <%= link_to "Activate login with Linkedin", user_omniauth_authorize_path(:linkedin, {:state => "link_to_linkedin"}), :class => "link" %> </p>
+    <% else %>
+      <p><img src="/img/linkedin.png" title="Linkedin" /> <%= link_to "Deactivate login with Linkedin", deactivate_registration_path({:network => "linkedin"}), :class => "link" %>
+    <% end %>
+  </li>
+</ul>
+
 <h3>Cancel my account</h3>
 
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>

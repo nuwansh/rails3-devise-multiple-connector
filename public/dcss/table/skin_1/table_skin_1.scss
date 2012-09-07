@@ -1,0 +1,18 @@
+// Bordered Tables - Add borders around the entire table 
+//
+// div.data > table.tb-bordered > tr > td - Table bordered view elements
+// .tb-bordered - Bordered table skin class is <strong>.tb-bordered</strong>
+// View - <a href="/view_table" rel="more">View table output</a>
+//
+// Styleguide 1.0
+
+
+.tb-complex thead tr {
+    background-color: #DDDDDD;
+}
+.tb-bordered {
+    border: 1px solid #AE0345;
+}
+.tb-bordered th, .tb-bordered td {
+
+}

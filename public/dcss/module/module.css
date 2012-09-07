@@ -1,0 +1,11 @@
+[class^="mod"] {
+  margin: 10px; }
+
+.bd, .ft, .hd {
+  overflow: hidden;
+  *overflow: visible;
+  zoom: 1; }
+
+.simple .inner {
+  background-color: #FCFCFC;
+  border: 1px solid #CCC; }

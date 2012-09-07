@@ -1,0 +1,180 @@
+// Templates skin include the main element's styles <br />
+// 
+// h1 - Heading 1, If you need to use class select <strong>.h1</strong> will be useful for same appearance  
+// h2 - Heading 2, If you need to use class select <strong>.h2</strong> will be useful for same appearance  
+// h3 - Heading 3, If you need to use class select <strong>.h3</strong> will be useful for same appearance  
+// h4 - Heading 4, if you need to use class select <strong>.h4</strong> will be useful for same appearance
+// hr - Slim horizontal line
+// Text Formatting Elements
+// a - The a element is usually referred to as a link (Text Formatting Elements), <strong>:visited</strong>, <strong>:hover</strong>, <strong>:focus</strong>
+// ul > li.simpleList  - An unordered list of items or text 
+// ol > li.simpleList  - An ordered list of items/text 
+// View - <a href="/view_template" rel="more">View output</a>
+//
+// Styleguide 1.0
+
+// heading font color
+$h1_color: #AE0345;
+$h2_color: #AE0345;
+$h3_color: #DF2B72;
+$h4_color: #333333; 
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote {
+    padding: 10px 10px 0;
+    line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl {
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+//em {
+//    font-style: italic;
+//}
+
+strong {
+    font-weight: bold;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #E2E2E2;
+    border-style: solid;
+    border-width: 0 0 5px;
+    margin: 20px 10px 10px;
+}
+//code {
+//    color: #0B8C8F;
+//}
+
+
+h1, .h1 {
+    color: $h1_color;
+    font-size: 196%;
+}
+h2, .h2 {
+    color: $h2_color;
+    font-size: 167%;
+}
+h3, .h3 {
+    color: $h3_color;
+    font-size: 146.5%;
+}
+h4, .h4 {
+    color: $h4_color;
+    font-size: 123.1%;
+}
+
+// h5, .h5 {
+//     color: #AE0345;
+//     font-size: 108%;
+// }
+// h6, .h6 {
+//     color: #333333;
+//     font-size: 108%;
+//     font-style: italic;
+// }
+//.category {
+//    color: #333333;
+//    font-size: 108%;
+//    font-style: normal;
+//    font-weight: normal;
+//    text-transform: uppercase;
+//}
+//.category a {
+//    color: #333333;
+//}
+//.important a {
+//    font-weight: bold;
+//}
+
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+// a:visited {
+//     color: #005A9C;
+// }
+
+
+ol.simpleList li {
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+
+ul.simpleList li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+// cite {
+//     display: block;
+//     padding-top: 10px;
+//     text-align: right;
+// }
+// .callout {
+//     color: #999999;
+//     font-size: 189%;
+//     font-style: italic;
+// }
+// .callout cite {
+//     display: block;
+//     font-size: 69.25%;
+//     padding-top: 30px;
+//     text-align: right;
+// }
+// .callout span.quot {
+//     color: #E2E2E2;
+//     font-size: 500%;
+//     font-weight: bold;
+//     line-height: 25px;
+//     vertical-align: sub;
+// }
+// .callout span.quotLast {
+//     vertical-align: middle;
+// }
+// .caption {
+//     color: #666666;
+//     font-size: 13px;
+//     font-style: italic;
+//     padding-top: 0;
+// }
+// .media {
+//     margin: 10px;
+//     overflow: visible;
+// }
+// .media .img {
+//     float: left;
+//     margin-right: 10px;
+// }
+// .media .img img {
+//     display: block;
+// }
+// .media .imgExt {
+//     float: right;
+//     margin-left: 10px;
+// }
+// .detail {
+//     color: #777777;
+//     display: block;
+//     font-size: 11px;
+// }
+

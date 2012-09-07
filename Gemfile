@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.7'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,8 +13,19 @@ gem "simple-navigation"
 gem 'will_paginate', '~> 3.0'
 gem "jammit"
 gem "cancan"
-gem "devise", "~> 2.0.4"
+gem 'devise', '>= 2.1.0'
 gem "devise_invitable", "~> 1.0.0"
+gem "omniauth"
+gem "omniauth-facebook"
+gem "omniauth-twitter", :git => 'https://github.com/arunagw/omniauth-twitter.git'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-linkedin'
+
+group :development do
+  #gem "rdcss", :path => "../rdcss"
+  gem 'thin'
+  gem "annotate"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

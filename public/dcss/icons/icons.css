@@ -1,0 +1,24 @@
+[class^="icon-"] {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: text-top;
+  background-image: url(../img/icons.png);
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  *margin-right: .3em; }
+
+.btn-large [class^="icon-"] {
+  margin-top: 1px; }
+
+.icon-plus {
+  background-position: 0 0; }
+
+.icon-ok-sign {
+  background-position: 0 -64px; }
+
+.icon-minus-sign {
+  background-position: 0 -128px; }
+
+.icon-arrow-right {
+  background-position: 0 -190px; }

@@ -1,17 +1,17 @@
-<h2>Sign up</h2>
+<h2>Create Account</h2>
 <hr />
 
+<p>
+<i><%= image_tag "/img/#{resource.provider}.png" %></i>
+  Connected as <%= session["devise.app_data"].name %> </p>
+
+<div class="span9">
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-  </div>
-
-  <div>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
   </div>
 
   <div>
@@ -31,7 +31,7 @@
 
   <div>
     <br />
-    <button type="submit" class="btn btn-primary">Sign up</button> 
+    <button type="submit" class="btn btn-primary btn-large">Create Account</button> 
   </div>
 <% end %>
-
+</div>

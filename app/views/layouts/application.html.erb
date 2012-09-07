@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="<%= root_path %>">Project name</a>
 
           <div class="nav-collapse">
             <% if user_signed_in? %>
@@ -31,7 +31,7 @@
             <% if user_signed_in? %>
               <p class="navbar-text pull-right">Logged in as <%= link_to loggin_name(current_user.first_name, current_user.email), edit_user_registration_path %> <%= link_to 'Log out', destroy_user_session_path, :method => :delete, :id => "sign_out_link", :class => "mll" %></p>
             <% else %>
-              <p class="navbar-text pull-right mll"><%= link_to "Create Account", new_user_registration_path %></p>
+              <p class="navbar-text pull-right mll"><%= link_to "Create Account", join_path %></p>
               <p class="navbar-text pull-right"><%= link_to "Login", new_user_session_path %></p>
             <% end %>
 
@@ -43,11 +43,13 @@
 
       <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <%= render_navigation(:level => 2) %>
-          </div><!--/.well -->
-        </div><!--/span-->
+        <% unless render_navigation(:level => 2).nil? %>
+          <div class="span3">
+            <div class="well sidebar-nav">
+              <%= render_navigation(:level => 2) %>
+            </div><!--/.well -->
+          </div><!--/span-->
+        <% end %>
 
         <div class="span9">
           <% flash.each do |name, msg| %>

@@ -1,0 +1,22 @@
+//  Modules Container Objects  
+//
+//  .mod    - Module is the wrapper for every container object. It provides basic structure for a transparent inside module. 
+//  .inner - Inner exists for two reasons. First, it solves a bug (Opera prior to version 8.5) in which position relative and overflow hidden cannot exist on the same element. Second, it allows for two elements on which borders can be placed to extend the number of blocks that can be built without using image based borders.
+//  .hd  - The module header generally contains a heading, but may also contain buttons, links, tabs, etc.
+//  .bd  - The body is the main open editable region of the module.
+//  .ft  -The module footer is an object. 
+//  View - <a href="/view_module">View Module Output</a>
+//
+//  Styleguide 1.0
+
+
+// mod object
+[class^="mod"] { 
+  margin: 10px;
+}
+//.mod{margin:10px;}
+.mod .inner { }
+.bd,.ft, .hd{ overflow:hidden; *overflow:visible; zoom:1;}
+
+//Simple mod
+.simple .inner {  background-color: #FCFCFC; border: 1px solid #CCC; }

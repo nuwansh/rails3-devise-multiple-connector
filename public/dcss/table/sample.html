@@ -1,0 +1,181 @@
+/* 
+:description:
+Table elements 
+
+:modifiers:
+.data - Div wrapper for the table element
+.data > table > tr > td - Table Elements struture
+.tb-basic - Basic table  skin class is <strong>.tb-basic</strong>
+
+ :sample:
+ <!-- Table Elements -->
+<div class="data">
+  <table class="tb-basic">
+    <thead>
+      <tr>
+        <th>Head 1</th>
+        <th>Head 2</th>
+      </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Account Type</td>
+      <td>Interest Rate</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+:html:
+    <div class="data">
+    <table class="tb-basic">
+        <thead>
+          <tr>
+            <th>Head 1</th>
+            <th>Head 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account Type</td>
+            <td>Interest Rate</td>
+          </tr>
+          <tr>
+            <td>Smart</td>
+            <td>From 2%</td>
+          </tr>
+          <tr>
+            <td>Young Saver</td>
+            <td>From 1.6%</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+    <h4>Bordered table</h4>
+    <div class="data">
+    <table class="tb-bordered">
+        <thead>
+          <tr>
+            <th>Head 1</th>
+            <th>Head 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account Type</td>
+            <td>Interest Rate</td>
+          </tr>
+          <tr>
+            <td>Smart</td>
+            <td>From 2%</td>
+          </tr>
+          <tr>
+            <td>Young Saver</td>
+            <td>From 1.6%</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+    <h4>Striped Table</h4>
+    <div class="data">
+    <table class="tb-striped">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account Type</td>
+            <td>Interest Rate</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>Smart</td>
+            <td>From 2%</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>Young Saver</td>
+            <td>From 1.6%</td>
+            <td>Javascript</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+:styleguide: 1.0
+*/
+
+.data {
+   border-right: 1px solid transparent;
+   padding: 10px;
+   position: relative;
+   vertical-align: top;
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    vertical-align: top;
+}
+
+// .txtC, .data .txtC td, .data .txtC th {
+//     text-align: center;
+// }
+// .txtL, .data .txtL td, .data .txtL th {
+//     text-align: left;
+// }
+// .txtR, .data .txtR td, .data .txtR th {
+//     text-align: right;
+// }
+// .txtT, .data .txtT td, .data .txtT th {
+//     vertical-align: top;
+// }
+// .txtB, .data .txtB td, .data .txtB th {
+//     vertical-align: bottom;
+// }
+// .txtM, .data .txtM td, .data .txtM th {
+//     vertical-align: middle;
+// }
+
+.data th, .data td {
+    padding: 8px;
+    border-bottom: 1px solid #AE0345;
+}
+
+.data th {
+    color: #000000;
+    font-weight: bold;
+}
+
+//.tb-basic thead tr {
+//    background-color: #FFF0F8;
+//}
+
+// .spec {
+//     padding: 10px;
+// }
+// .spec table {
+//     border-color: #E2E2E2 -moz-use-text-color #FFFFFF;
+//     border-left: medium none;
+//     border-right: medium none;
+//     border-top: 1px solid #E2E2E2;
+// }
+// .spec th, .spec td {
+//     -moz-border-bottom-colors: none;
+//     -moz-border-image: none;
+//     -moz-border-left-colors: none;
+//     -moz-border-right-colors: none;
+//     -moz-border-top-colors: none;
+//     border-color: #E2E2E2;
+//     border-style: solid;
+//     border-width: 1px 0;
+//     padding-left: 0;
+// }
+// .spec .odd, .spec .even {
+//     background-color: #FFFFFF;
+// }

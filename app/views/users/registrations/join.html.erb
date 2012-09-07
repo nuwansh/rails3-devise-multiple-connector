@@ -1,0 +1,13 @@
+<h2>Sign up</h2>
+<hr />
+
+<div class="span12">
+  <ul class="unstyled">
+    <li>
+      <%= link_to "Sign up with Facebook", user_omniauth_authorize_path(:facebook), :class =>"btn btn-large btn-primary", :rel=>"tooltip" %> 
+      <%= link_to "Sign up with Twitter", user_omniauth_authorize_path(:twitter), :class =>"btn btn-large btn-info", :rel=>"tooltip" %>
+      <%= link_to "Sign up with Google", user_omniauth_authorize_path(:google_oauth2), :class =>"btn btn-large btn-warning", :rel=>"tooltip" %>
+      <%= link_to "Sign up with Linkedin", user_omniauth_authorize_path(:linkedin), :class =>"btn btn-large btn-inverse", :rel=>"tooltip" %>
+    </li>
+  </ul>
+</div>

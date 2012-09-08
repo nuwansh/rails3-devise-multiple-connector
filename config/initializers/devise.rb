@@ -222,12 +222,12 @@ Devise.setup do |config|
   # end
 
 
-  config.omniauth :facebook, "app_key", "secret_key", :strategy_class => OmniAuth::Strategies::Facebook
+   config.omniauth :facebook, "app_key", "secret_key", :strategy_class => OmniAuth::Strategies::Facebook
 
-  # Twitter connector
-  config.omniauth :twitter,  "app_key", "secret_key"  #, :strategy_class => OmniAuth::Strategies::Twitter
+   # Twitter connector
+   config.omniauth :twitter,  "app_key", "secret_key"  #, :strategy_class => OmniAuth::Strategies::Twitter
 
-  config.omniauth :google_oauth2,  "app_key", "secret_key", {:scope => "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", :access_type => 'online', :approval_prompt => "auto" }
+   config.omniauth :google_oauth2,  "app_key", "secret_key", {:scope => "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", :access_type => 'online', :approval_prompt => "auto" }
 
-  config.omniauth  :linkedin,  "app_key", "secret_key", :scope => "r_emailaddress r_fullprofile", :fields => ["id", "email-address", "first-name", "last-name", "headline", "picture-url", "public-profile-url"] 
+   config.omniauth  :linkedin,  "app_key", "secret_key", :scope => "r_emailaddress r_fullprofile", :fields => ["id", "email-address", "first-name", "last-name", "headline", "picture-url", "public-profile-url"] 
 end

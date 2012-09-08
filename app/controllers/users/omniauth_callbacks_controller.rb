@@ -12,7 +12,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
         flash[:notice] = "Successfully linked that account!"
         redirect_to edit_user_registration_path
 
-      elsif !user_signed_in? && @user.persisted?
+      elsif !user_signed_in? && !@user.nil?
 
         flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Facebook"
         sign_in_and_redirect @user, :event => :authentication
@@ -45,7 +45,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
         flash[:notice] = "Successfully logini!"
         redirect_to edit_user_registration_path
 
-      elsif !user_signed_in? && @user.persisted?
+      elsif !user_signed_in? && !@user.nil?
 
         flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Twitter"
         sign_in_and_redirect @user, :event => :authentication
@@ -80,7 +80,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       flash[:notice] = "Successfully linked that account!"
       redirect_to edit_user_registration_path
 
-    elsif !user_signed_in? && @user.persisted?
+    elsif !user_signed_in? && !@user.nil?
 
       flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Google"
       sign_in_and_redirect @user, :event => :authentication
@@ -115,7 +115,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       flash[:notice] = "Successfully linked that account!"
       redirect_to edit_user_registration_path
 
-    elsif !user_signed_in? && @user.persisted?
+    elsif !user_signed_in? && !@user.nil?
 
       flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Linkedin"
       sign_in_and_redirect @user, :event => :authentication
